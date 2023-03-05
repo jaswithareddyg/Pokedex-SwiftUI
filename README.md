@@ -7,6 +7,7 @@
 
 # Attributions
 
-
+Pokédex Icon <br>
+https://dribbble.com/shots/2214760-Pokedex-App-Icon <br>
 
 # Notes
