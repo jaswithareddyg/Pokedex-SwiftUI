@@ -1,4 +1,4 @@
-# Final Project - Pokedex
+# Final Project - Pokédex
 
 - Name: Jaswitha Reddy Guntaka
 - UChicago Email: jaswithareddy@uchicago.edu
