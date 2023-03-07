@@ -8,6 +8,6 @@
 # Attributions
 
 Pokédex Icon <br>
-https://dribbble.com/shots/2214760-Pokedex-App-Icon <br>
+https://icons-for-free.com/Pokedex+tool-1320568182154727832/ <br>
 
 # Notes
