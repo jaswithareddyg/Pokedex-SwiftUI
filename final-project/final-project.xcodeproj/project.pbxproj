@@ -152,6 +152,8 @@
 			dependencies = (
 			);
 			name = "final-project";
+			packageProductDependencies = (
+			);
 			productName = "final-project";
 			productReference = BC54A7C829B555AA002E7506 /* final-project.app */;
 			productType = "com.apple.product-type.application";
@@ -180,6 +182,9 @@
 				Base,
 			);
 			mainGroup = BC54A7BF29B555AA002E7506;
+			packageReferences = (
+				BC54A7ED29B851F6002E7506 /* XCRemoteSwiftPackageReference "PokemonAPI" */,
+			);
 			productRefGroup = BC54A7C929B555AA002E7506 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -425,6 +430,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BC54A7ED29B851F6002E7506 /* XCRemoteSwiftPackageReference "PokemonAPI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kinkofer/PokemonAPI";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
 	};
 	rootObject = BC54A7C029B555AA002E7506 /* Project object */;
 }

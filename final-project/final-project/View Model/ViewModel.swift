@@ -14,6 +14,7 @@ final class ViewModel: ObservableObject {
     @Published var pokemonList = [Pokemon]()
     @Published var pokemonDetails: DetailPokemon?
     @Published var searchText = ""
+    @Published var favoritePokemon: [Pokemon] = []
     
     var filteredPokemon: [Pokemon] {
         return searchText == "" ? pokemonList : pokemonList.filter { $0.name.contains(searchText.lowercased())
@@ -34,7 +35,7 @@ final class ViewModel: ObservableObject {
     
     func getDetails(pokemon: Pokemon) {
         let id = getPokemonIndex(pokemon: pokemon)
-        self.pokemonDetails = DetailPokemon(id: 1, height: 0, weight: 0)
+        self.pokemonDetails = DetailPokemon(id: 1, height: 0, weight: 0, base_experience: 0, order: 0)
         pokemonManager.getDetailedPokemon(id: id) {data in
             DispatchQueue.main.async {
                 self.pokemonDetails = data
@@ -46,5 +47,17 @@ final class ViewModel: ObservableObject {
         let dValue = Double(value)
         let string = String(format: "%.2f", dValue / 10)
         return string
+    }
+    
+    func toggleFavorite(pokemon: Pokemon) {
+        if isFavorite(pokemon: pokemon) {
+            favoritePokemon.removeAll(where: { $0.id == pokemon.id })
+        } else {
+            favoritePokemon.append(pokemon)
+        }
+    }
+        
+    func isFavorite(pokemon: Pokemon) -> Bool {
+        return favoritePokemon.contains(where: { $0.id == pokemon.id })
     }
 }

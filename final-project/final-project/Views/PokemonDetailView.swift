@@ -18,6 +18,8 @@ struct PokemonDetailView: View {
                 Text("**ID**: \(viewModel.pokemonDetails?.id ?? 0)")
                 Text("**Weight**: \(viewModel.formatHW(value: viewModel.pokemonDetails?.weight ?? 0)) KG")
                 Text("**Height**: \(viewModel.formatHW(value: viewModel.pokemonDetails?.height ?? 0)) M")
+                Text("**Base Experience**: \(viewModel.pokemonDetails?.base_experience ?? 0)")
+                Text("**Order**: \(viewModel.pokemonDetails?.order ?? 0)")
             }
             .font(.system(size: 20, weight: .regular, design: .monospaced))
         }
