@@ -14,10 +14,16 @@ final class ViewModel: ObservableObject {
     @Published var pokemonList = [Pokemon]()
     @Published var pokemonDetails: DetailPokemon?
     @Published var searchText = ""
+    @Published var favoritesearchText = ""
     @Published var favoritePokemon: [Pokemon] = []
     
     var filteredPokemon: [Pokemon] {
         return searchText == "" ? pokemonList : pokemonList.filter { $0.name.contains(searchText.lowercased())
+        }
+    }
+    
+    var favoritefilteredPokemon: [Pokemon] {
+        return favoritesearchText == "" ? favoritePokemon : favoritePokemon.filter { $0.name.contains(favoritesearchText.lowercased())
         }
     }
     
