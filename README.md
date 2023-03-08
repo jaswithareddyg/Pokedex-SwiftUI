@@ -7,8 +7,10 @@
 
 # Attributions
 
-Pokédex Icon <br>
+Pokédex Icon / AppIcon <br>
 https://icons-for-free.com/Pokedex+tool-1320568182154727832/ <br>
+Pokéball Icon <br>
+https://www.freeiconspng.com/downloadimg/45330 <br>
 
 # Notes
 
