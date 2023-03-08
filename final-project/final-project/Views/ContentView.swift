@@ -30,18 +30,13 @@ struct ContentView: View {
                 }
                 .searchable(text: $viewModel.searchText)
             }
+            .tint(.black)
             .environmentObject(viewModel)
             .tabItem {
                 Image("small-pokeball.jpg")
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width: 1, height: 1)
-                    
-                    
                 Text("Pokemon")
-                    .foregroundColor(.black)
-                    
             }
+            
             
             NavigationView {
                 ScrollView {
@@ -58,10 +53,11 @@ struct ContentView: View {
                 }
                 .searchable(text: $viewModel.favoritesearchText)
             }
+            .tint(.black)
             .environmentObject(viewModel)
             .tabItem {
                 Image(systemName: "star.fill")
-                    .foregroundColor(.yellow)
+                    .foregroundColor(Color.yellow)
                 Text("Favorites")
             }
         }
