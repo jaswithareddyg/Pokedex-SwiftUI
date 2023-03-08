@@ -67,7 +67,6 @@
 		BC54A7CA29B555AA002E7506 /* final-project */ = {
 			isa = PBXGroup;
 			children = (
-				BC54A80629B88985002E7506 /* New Group */,
 				BC54A7CB29B555AA002E7506 /* final_projectApp.swift */,
 				BC54A7CF29B555AB002E7506 /* Assets.xcassets */,
 				BC54A7E829B7C34E002E7506 /* Views */,
@@ -75,6 +74,7 @@
 				BC54A7DF29B7AB58002E7506 /* Models */,
 				BC54A7E529B7ACB1002E7506 /* Managers */,
 				BC54A7DC29B7A915002E7506 /* Helpers */,
+				BC54A80629B88985002E7506 /* Resource */,
 				BC54A7D929B794D1002E7506 /* Data */,
 				BC54A7D129B555AB002E7506 /* Preview Content */,
 			);
@@ -140,11 +140,11 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		BC54A80629B88985002E7506 /* New Group */ = {
+		BC54A80629B88985002E7506 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = "New Group";
+			path = Resource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
