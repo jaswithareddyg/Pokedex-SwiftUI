@@ -12,19 +12,31 @@ struct PokemonDetailView: View {
     let pokemon: Pokemon
     
     var body: some View {
-        VStack {
-            PokemonView(pokemon: pokemon)
-            VStack(spacing: 10) {
-                Text("**ID**: \(viewModel.pokemonDetails?.id ?? 0)")
-                Text("**Weight**: \(viewModel.formatHW(value: viewModel.pokemonDetails?.weight ?? 0)) KG")
-                Text("**Height**: \(viewModel.formatHW(value: viewModel.pokemonDetails?.height ?? 0)) M")
-                Text("**Base Experience**: \(viewModel.pokemonDetails?.base_experience ?? 0)")
-                Text("**Order**: \(viewModel.pokemonDetails?.order ?? 0)")
+        VStack(spacing: 70.0) {
+            VStack {
+                PokemonView(pokemon: pokemon)
+                VStack(spacing: 10) {
+                    Text("**ID**: \(viewModel.pokemonDetails?.id ?? 0)")
+                    Text("**Weight**: \(viewModel.formatHW(value: viewModel.pokemonDetails?.weight ?? 0)) KG")
+                    Text("**Height**: \(viewModel.formatHW(value: viewModel.pokemonDetails?.height ?? 0)) M")
+                    Text("**Base Experience**: \(viewModel.pokemonDetails?.base_experience ?? 0)")
+                    Text("**Order**: \(viewModel.pokemonDetails?.order ?? 0)")
+                }
+                .font(.system(size: 20, weight: .regular, design: .monospaced))
             }
-            .font(.system(size: 20, weight: .regular, design: .monospaced))
-        }
-        .onAppear{
-            viewModel.getDetails(pokemon: pokemon)
+            .onAppear{
+                viewModel.getDetails(pokemon: pokemon)
+            }
+            
+            NavigationLink(destination: View3D()) {
+                                Text("View in 3D")
+                    .font(.title3)
+                                    .foregroundColor(.black)
+                                    .padding()
+                                    .background(Color(hue: 1.0, saturation: 0.0, brightness: 0.949))
+                                    .cornerRadius(30)
+                                    .shadow(color: .gray, radius: 2, x: 3, y: 3)
+            }
         }
     }
 }

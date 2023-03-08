@@ -18,6 +18,7 @@
 		BC54A7E729B7ACCB002E7506 /* PokemonManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC54A7E629B7ACCB002E7506 /* PokemonManager.swift */; };
 		BC54A7EA29B7C415002E7506 /* PokemonDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC54A7E929B7C415002E7506 /* PokemonDetailView.swift */; };
 		BC54A7EC29B7C5E6002E7506 /* PokemonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC54A7EB29B7C5E6002E7506 /* PokemonView.swift */; };
+		BC54A7F329B87CB4002E7506 /* View3D.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC54A7F229B87CB4002E7506 /* View3D.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		BC54A7E629B7ACCB002E7506 /* PokemonManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonManager.swift; sourceTree = "<group>"; };
 		BC54A7E929B7C415002E7506 /* PokemonDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonDetailView.swift; sourceTree = "<group>"; };
 		BC54A7EB29B7C5E6002E7506 /* PokemonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonView.swift; sourceTree = "<group>"; };
+		BC54A7F229B87CB4002E7506 /* View3D.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View3D.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +134,7 @@
 				BC54A7CD29B555AA002E7506 /* ContentView.swift */,
 				BC54A7E929B7C415002E7506 /* PokemonDetailView.swift */,
 				BC54A7EB29B7C5E6002E7506 /* PokemonView.swift */,
+				BC54A7F229B87CB4002E7506 /* View3D.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -213,6 +216,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC54A7EC29B7C5E6002E7506 /* PokemonView.swift in Sources */,
+				BC54A7F329B87CB4002E7506 /* View3D.swift in Sources */,
 				BC54A7E429B7AC98002E7506 /* ViewModel.swift in Sources */,
 				BC54A7E729B7ACCB002E7506 /* PokemonManager.swift in Sources */,
 				BC54A7CE29B555AA002E7506 /* ContentView.swift in Sources */,
