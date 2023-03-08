@@ -8,8 +8,18 @@
 import SwiftUI
 
 struct View3D: View {
+    @State private var showingAlert = false
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Button("Tap to View Alert") {
+            showingAlert = true
+        }
+        .foregroundColor(.red)
+        .fontWeight(.bold)
+        .font(.title2)
+        .alert("3D View Not Available", isPresented: $showingAlert) {
+            Button("Dismiss", role: .cancel) {}
+        }
     }
 }
 
