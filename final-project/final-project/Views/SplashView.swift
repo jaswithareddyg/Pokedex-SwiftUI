@@ -48,6 +48,7 @@ struct SplashView: View {
                             .ignoresSafeArea()
             )
             .onAppear{
+                print("Splash Screen is loading...")
                 DispatchQueue.main.asyncAfter(deadline: .now() + 10.0) {
                     self.isActive = true
                 }

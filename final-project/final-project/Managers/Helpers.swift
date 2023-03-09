@@ -29,13 +29,13 @@ extension Bundle {
             print(error)
             fatalError("Could not decode \(file) from bundle.")
         }*/
-        print("Loadind data from json file .....")
+        print("Loading data from json file .....")
         return loadedData
     }
     
     func fetchData<T: Decodable>(url: String, model: T.Type, completion: @escaping(T) -> (), failure: @escaping(Error) -> ()) {
         guard let url = URL(string: url) else {return}
-        
+        print("Fetching data from \(url)")
         URLSession.shared.dataTask(with: url) {(data, response, error) in
             guard let data = data else {
                 if let error = error {

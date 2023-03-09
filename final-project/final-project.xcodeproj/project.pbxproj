@@ -79,10 +79,8 @@
 				BC54A7CB29B555AA002E7506 /* final_projectApp.swift */,
 				BC54A7E829B7C34E002E7506 /* Views */,
 				BC54A81F29B99CFB002E7506 /* Fonts */,
-				BC54A7E229B7AC78002E7506 /* View Model */,
 				BC54A7DF29B7AB58002E7506 /* Models */,
 				BC54A7E529B7ACB1002E7506 /* Managers */,
-				BC54A7DC29B7A915002E7506 /* Helpers */,
 				BC54A7D929B794D1002E7506 /* Data */,
 				BC54A7D129B555AB002E7506 /* Preview Content */,
 			);
@@ -105,34 +103,20 @@
 			path = Data;
 			sourceTree = "<group>";
 		};
-		BC54A7DC29B7A915002E7506 /* Helpers */ = {
-			isa = PBXGroup;
-			children = (
-				BC54A7DD29B7A92F002E7506 /* Helpers.swift */,
-			);
-			path = Helpers;
-			sourceTree = "<group>";
-		};
 		BC54A7DF29B7AB58002E7506 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				BC54A7E329B7AC98002E7506 /* ViewModel.swift */,
 				BC54A7E029B7AB73002E7506 /* PokemonModel.swift */,
 			);
 			path = Models;
-			sourceTree = "<group>";
-		};
-		BC54A7E229B7AC78002E7506 /* View Model */ = {
-			isa = PBXGroup;
-			children = (
-				BC54A7E329B7AC98002E7506 /* ViewModel.swift */,
-			);
-			path = "View Model";
 			sourceTree = "<group>";
 		};
 		BC54A7E529B7ACB1002E7506 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
 				BC54A7E629B7ACCB002E7506 /* PokemonManager.swift */,
+				BC54A7DD29B7A92F002E7506 /* Helpers.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";

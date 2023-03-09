@@ -30,7 +30,7 @@ struct PokemonView: View {
             
             HStack(alignment: .top, spacing: 12.0) {
                 Text("\(pokemon.name.capitalized)")
-                    .font(.system(size: 20, weight: .regular, design: .monospaced))
+                    .font(.system(size: 18, weight: .regular, design: .monospaced))
                     .padding(.bottom, 20)
                 
                 Button(action: {addFavorite(pokemon: pokemon)}) {

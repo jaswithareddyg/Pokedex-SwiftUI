@@ -9,6 +9,8 @@ import SwiftUI
 
 struct ContentView: View {
     @StateObject var viewModel = ViewModel()
+    @State private var showAlert = false
+    
     private let adaptiveColumns = [
         GridItem(.adaptive(minimum: 150))
     ]
@@ -64,6 +66,12 @@ struct ContentView: View {
                     .foregroundColor(Color.yellow)
                 Text("Favorites")
             }
+        }
+        .onAppear {
+            self.showAlert = true
+        }
+        .alert(isPresented: $showAlert) {
+            Alert(title: Text("Welcome!"), message: Text("This app does not work without the internet. Please be careful!"), dismissButton: .default(Text("OK!")))
         }
     }
 }
