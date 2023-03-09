@@ -7,10 +7,18 @@
 
 # Attributions
 
+Pokémon API <br>
+https://pokeapi.co/docs/v2#pokemon <br>
 Pokédex Icon / AppIcon <br>
 https://icons-for-free.com/Pokedex+tool-1320568182154727832/ <br>
 Pokéball Icon <br>
 https://www.freeiconspng.com/downloadimg/45330 <br>
+Splach Screen <br>
+https://medium.com/@liyicky/how-to-make-a-splash-screen-in-swift-ui-83b02984a6ab <br>
+Fonts <br>
+https://www.dafont.com/pokemon.font<br>
+Adding Fonts to Project <br>
+https://sarunw.com/posts/swiftui-custom-font/ <br>
 
 # Notes
 
