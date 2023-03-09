@@ -24,10 +24,12 @@ struct ContentView: View {
                             }
                         }
                     }
-                    .animation(.easeIn(duration: 0.3), value: viewModel.filteredPokemon.count)
-                    .navigationTitle("Pokemon")
-                    .navigationBarTitleDisplayMode(.inline)
+    
                 }
+                .animation(.easeIn(duration: 0.3), value: viewModel.filteredPokemon.count)
+                .navigationTitle("Pokemon")
+                .font(.custom("Pokemon Solid", size: 20))
+                
                 .searchable(text: $viewModel.searchText)
             }
             .tint(.black)
@@ -49,8 +51,10 @@ struct ContentView: View {
                     }
                     .animation(.easeIn(duration: 0.3), value: viewModel.favoritePokemon.count)
                     .navigationTitle("Pokemon")
-                    .navigationBarTitleDisplayMode(.inline)
                 }
+                .animation(.easeIn(duration: 0.3), value: viewModel.favoritePokemon.count)
+                .navigationTitle("Pokemon")
+                .font(.custom("Pokemon Solid", size: 20))
                 .searchable(text: $viewModel.favoritesearchText)
             }
             .tint(.black)

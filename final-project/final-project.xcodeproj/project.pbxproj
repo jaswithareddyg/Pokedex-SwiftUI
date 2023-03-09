@@ -19,7 +19,9 @@
 		BC54A7EA29B7C415002E7506 /* PokemonDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC54A7E929B7C415002E7506 /* PokemonDetailView.swift */; };
 		BC54A7EC29B7C5E6002E7506 /* PokemonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC54A7EB29B7C5E6002E7506 /* PokemonView.swift */; };
 		BC54A7F329B87CB4002E7506 /* View3D.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC54A7F229B87CB4002E7506 /* View3D.swift */; };
-		BC54A81A29B8915D002E7506 /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC54A81929B8915D002E7506 /* SplashScreen.swift */; };
+		BC54A81A29B8915D002E7506 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC54A81929B8915D002E7506 /* SplashView.swift */; };
+		BC54A81D29B99CF6002E7506 /* Pokemon Hollow.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BC54A81B29B99CF6002E7506 /* Pokemon Hollow.ttf */; };
+		BC54A81E29B99CF6002E7506 /* Pokemon Solid.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BC54A81C29B99CF6002E7506 /* Pokemon Solid.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,7 +38,10 @@
 		BC54A7E929B7C415002E7506 /* PokemonDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonDetailView.swift; sourceTree = "<group>"; };
 		BC54A7EB29B7C5E6002E7506 /* PokemonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonView.swift; sourceTree = "<group>"; };
 		BC54A7F229B87CB4002E7506 /* View3D.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View3D.swift; sourceTree = "<group>"; };
-		BC54A81929B8915D002E7506 /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
+		BC54A81929B8915D002E7506 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		BC54A81B29B99CF6002E7506 /* Pokemon Hollow.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pokemon Hollow.ttf"; sourceTree = "<group>"; };
+		BC54A81C29B99CF6002E7506 /* Pokemon Solid.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pokemon Solid.ttf"; sourceTree = "<group>"; };
+		BC54A82029B99D42002E7506 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,9 +74,11 @@
 		BC54A7CA29B555AA002E7506 /* final-project */ = {
 			isa = PBXGroup;
 			children = (
-				BC54A7CB29B555AA002E7506 /* final_projectApp.swift */,
+				BC54A82029B99D42002E7506 /* Info.plist */,
 				BC54A7CF29B555AB002E7506 /* Assets.xcassets */,
+				BC54A7CB29B555AA002E7506 /* final_projectApp.swift */,
 				BC54A7E829B7C34E002E7506 /* Views */,
+				BC54A81F29B99CFB002E7506 /* Fonts */,
 				BC54A7E229B7AC78002E7506 /* View Model */,
 				BC54A7DF29B7AB58002E7506 /* Models */,
 				BC54A7E529B7ACB1002E7506 /* Managers */,
@@ -137,9 +144,18 @@
 				BC54A7E929B7C415002E7506 /* PokemonDetailView.swift */,
 				BC54A7EB29B7C5E6002E7506 /* PokemonView.swift */,
 				BC54A7F229B87CB4002E7506 /* View3D.swift */,
-				BC54A81929B8915D002E7506 /* SplashScreen.swift */,
+				BC54A81929B8915D002E7506 /* SplashView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		BC54A81F29B99CFB002E7506 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				BC54A81B29B99CF6002E7506 /* Pokemon Hollow.ttf */,
+				BC54A81C29B99CF6002E7506 /* Pokemon Solid.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -205,6 +221,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC54A81E29B99CF6002E7506 /* Pokemon Solid.ttf in Resources */,
+				BC54A81D29B99CF6002E7506 /* Pokemon Hollow.ttf in Resources */,
 				BC54A7D329B555AB002E7506 /* Preview Assets.xcassets in Resources */,
 				BC54A7DB29B794FB002E7506 /* pokemon.json in Resources */,
 				BC54A7D029B555AB002E7506 /* Assets.xcassets in Resources */,
@@ -218,7 +236,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC54A81A29B8915D002E7506 /* SplashScreen.swift in Sources */,
+				BC54A81A29B8915D002E7506 /* SplashView.swift in Sources */,
 				BC54A7EC29B7C5E6002E7506 /* PokemonView.swift in Sources */,
 				BC54A7F329B87CB4002E7506 /* View3D.swift in Sources */,
 				BC54A7E429B7AC98002E7506 /* ViewModel.swift in Sources */,
@@ -359,11 +377,13 @@
 				DEVELOPMENT_TEAM = 79R644N9YX;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "final-project/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Pokédex";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -393,11 +413,13 @@
 				DEVELOPMENT_TEAM = 79R644N9YX;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "final-project/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Pokédex";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
