@@ -23,6 +23,8 @@
 		BC54A81D29B99CF6002E7506 /* Pokemon Hollow.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BC54A81B29B99CF6002E7506 /* Pokemon Hollow.ttf */; };
 		BC54A81E29B99CF6002E7506 /* Pokemon Solid.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BC54A81C29B99CF6002E7506 /* Pokemon Solid.ttf */; };
 		BC54A82229B9C657002E7506 /* PopupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC54A82129B9C657002E7506 /* PopupView.swift */; };
+		BC9212E529BAEAD5005CB7F9 /* Bulbasaur_-_Pokemon.scn in Resources */ = {isa = PBXBuildFile; fileRef = BC9212E429BAEAD5005CB7F9 /* Bulbasaur_-_Pokemon.scn */; };
+		BC9212E729BAED0B005CB7F9 /* CustomSceneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9212E629BAED0B005CB7F9 /* CustomSceneView.swift */; };
 		BCAAF18129BADE6B00CD0B10 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCAAF18029BADE6B00CD0B10 /* Launch Screen.storyboard */; };
 		BCAAF18329BAE08500CD0B10 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = BCAAF18229BAE08500CD0B10 /* Settings.bundle */; };
 /* End PBXBuildFile section */
@@ -46,6 +48,8 @@
 		BC54A81C29B99CF6002E7506 /* Pokemon Solid.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pokemon Solid.ttf"; sourceTree = "<group>"; };
 		BC54A82029B99D42002E7506 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		BC54A82129B9C657002E7506 /* PopupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupView.swift; sourceTree = "<group>"; };
+		BC9212E429BAEAD5005CB7F9 /* Bulbasaur_-_Pokemon.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = "Bulbasaur_-_Pokemon.scn"; path = "final-project/Assets.xcassets/Bulbasaur_-_Pokemon.scn"; sourceTree = "<group>"; };
+		BC9212E629BAED0B005CB7F9 /* CustomSceneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSceneView.swift; sourceTree = "<group>"; };
 		BCAAF18029BADE6B00CD0B10 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		BCAAF18229BAE08500CD0B10 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -64,6 +68,7 @@
 		BC54A7BF29B555AA002E7506 = {
 			isa = PBXGroup;
 			children = (
+				BC9212E429BAEAD5005CB7F9 /* Bulbasaur_-_Pokemon.scn */,
 				BC54A7CA29B555AA002E7506 /* final-project */,
 				BC54A7C929B555AA002E7506 /* Products */,
 			);
@@ -135,9 +140,10 @@
 				BC54A7CD29B555AA002E7506 /* ContentView.swift */,
 				BC54A7E929B7C415002E7506 /* PokemonDetailView.swift */,
 				BC54A7EB29B7C5E6002E7506 /* PokemonView.swift */,
-				BC54A7F229B87CB4002E7506 /* View3D.swift */,
 				BC54A81929B8915D002E7506 /* SplashView.swift */,
 				BC54A82129B9C657002E7506 /* PopupView.swift */,
+				BC54A7F229B87CB4002E7506 /* View3D.swift */,
+				BC9212E629BAED0B005CB7F9 /* CustomSceneView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -199,6 +205,7 @@
 			mainGroup = BC54A7BF29B555AA002E7506;
 			packageReferences = (
 				BC54A7ED29B851F6002E7506 /* XCRemoteSwiftPackageReference "PokemonAPI" */,
+				BCAAF18729BAE27400CD0B10 /* XCRemoteSwiftPackageReference "Model3DView" */,
 			);
 			productRefGroup = BC54A7C929B555AA002E7506 /* Products */;
 			projectDirPath = "";
@@ -214,6 +221,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC9212E529BAEAD5005CB7F9 /* Bulbasaur_-_Pokemon.scn in Resources */,
 				BCAAF18129BADE6B00CD0B10 /* Launch Screen.storyboard in Resources */,
 				BC54A81E29B99CF6002E7506 /* Pokemon Solid.ttf in Resources */,
 				BC54A81D29B99CF6002E7506 /* Pokemon Hollow.ttf in Resources */,
@@ -235,6 +243,7 @@
 				BC54A81A29B8915D002E7506 /* SplashView.swift in Sources */,
 				BC54A7EC29B7C5E6002E7506 /* PokemonView.swift in Sources */,
 				BC54A7F329B87CB4002E7506 /* View3D.swift in Sources */,
+				BC9212E729BAED0B005CB7F9 /* CustomSceneView.swift in Sources */,
 				BC54A7E429B7AC98002E7506 /* ViewModel.swift in Sources */,
 				BC54A7E729B7ACCB002E7506 /* PokemonManager.swift in Sources */,
 				BC54A7CE29B555AA002E7506 /* ContentView.swift in Sources */,
@@ -464,6 +473,14 @@
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 6.0.0;
+			};
+		};
+		BCAAF18729BAE27400CD0B10 /* XCRemoteSwiftPackageReference "Model3DView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/frzi/Model3DView.git";
+			requirement = {
+				branch = main;
+				kind = branch;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */

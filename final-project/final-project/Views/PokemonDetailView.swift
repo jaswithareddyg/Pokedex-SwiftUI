@@ -41,7 +41,7 @@ struct PokemonDetailView: View {
                     viewModel.getDetails(pokemon: pokemon)
                 }
                 
-                NavigationLink(destination: View3D()) {
+                NavigationLink(destination: View3D(pokemon: pokemon)) {
                     Text("View in 3D")
                         .font(.title3)
                         .foregroundColor(.black)
