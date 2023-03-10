@@ -7,6 +7,8 @@
 
 import Foundation
 
+// This file calls the API and fetches the needed data.
+
 class PokemonManager {
     func getPokemon() -> [Pokemon] {
         let data: PokemonPage = Bundle.main.decode(file: "pokemon.json")

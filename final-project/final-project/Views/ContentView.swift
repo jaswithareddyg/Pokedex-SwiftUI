@@ -11,12 +11,14 @@ struct ContentView: View {
     @StateObject var viewModel = ViewModel()
     @State private var showAlert = false
     
+    // Sets a column limit and makes it organized
     private let adaptiveColumns = [
         GridItem(.adaptive(minimum: 150))
     ]
     
     var body: some View {
         TabView {
+            // for all pokemons
             NavigationView {
                 ScrollView {
                     LazyVGrid(columns: adaptiveColumns, spacing: 10) {
@@ -28,9 +30,11 @@ struct ContentView: View {
                     }
     
                 }
+                // animation for searching
                 .animation(.easeIn(duration: 0.3), value: viewModel.filteredPokemon.count)
+                
                 .navigationTitle("Pokemon")
-                .font(.custom("Pokemon Solid", size: 20))
+                .font(.custom("Pokemon Solid", size: 20)) // font is not workinng
                 
                 .searchable(text: $viewModel.searchText)
             }
@@ -41,7 +45,7 @@ struct ContentView: View {
                 Text("Pokemon")
             }
             
-            
+            // for only favorite pokemons
             NavigationView {
                 ScrollView {
                     LazyVGrid(columns: adaptiveColumns, spacing: 10) {
@@ -51,12 +55,13 @@ struct ContentView: View {
                             }
                         }
                     }
-                    .animation(.easeIn(duration: 0.3), value: viewModel.favoritePokemon.count)
-                    .navigationTitle("Pokemon")
                 }
+                // animation for searching
                 .animation(.easeIn(duration: 0.3), value: viewModel.favoritePokemon.count)
+                
                 .navigationTitle("Pokemon")
                 .font(.custom("Pokemon Solid", size: 20))
+                
                 .searchable(text: $viewModel.favoritesearchText)
             }
             .tint(.black)

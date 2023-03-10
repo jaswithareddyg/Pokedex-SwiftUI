@@ -10,6 +10,8 @@ import SceneKit
 
 struct CustomSceneView: UIViewRepresentable{
     
+    // view to create and have additional functions for the 3D Scene View
+    
     @Binding var scene: SCNScene?
     
     func makeUIView(context: Context) -> SCNView{

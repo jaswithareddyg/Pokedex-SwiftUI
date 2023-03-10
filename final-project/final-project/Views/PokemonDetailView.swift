@@ -16,6 +16,7 @@ struct PokemonDetailView: View {
         ScrollView{
             VStack(spacing: 70.0) {
                 HStack(alignment: .center) {
+                    // button for info
                     Button(action: {
                         self.showPopup = true
                     }) {
@@ -51,6 +52,7 @@ struct PokemonDetailView: View {
                         .shadow(color: .gray, radius: 2, x: 3, y: 3)
                 }
             }
+            //sheet view for info
             .sheet(isPresented: $showPopup) {
                         PopupView()
             }

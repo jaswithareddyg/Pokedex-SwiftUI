@@ -8,6 +8,8 @@
 import Foundation
 import SwiftUI
 
+// This file contains the list of pokemons, the seach functions, and the filter functions
+
 final class ViewModel: ObservableObject {
     private let pokemonManager = PokemonManager()
     
@@ -50,6 +52,7 @@ final class ViewModel: ObservableObject {
     }
     
     func formatHW(value: Int) -> String {
+        // converts API data to kilograms and meters
         let dValue = Double(value)
         let string = String(format: "%.2f", dValue / 10)
         return string

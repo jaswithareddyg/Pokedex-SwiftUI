@@ -7,6 +7,8 @@
 
 import Foundation
 
+// This file holds the structs that are used to access API data.
+
 struct PokemonPage: Codable {
     let count: Int
     let next: String

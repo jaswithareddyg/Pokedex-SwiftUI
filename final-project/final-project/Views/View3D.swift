@@ -17,6 +17,7 @@ struct View3D: View {
     
     var body: some View {
         if (viewModel.pokemonDetails?.id == 1) {
+            // shows 3D view if the pokemon in bulbasaur
             ScrollView{
                 VStack(alignment: .center) {
                     Text("Bulbasaur")
@@ -36,6 +37,7 @@ struct View3D: View {
             }
         }
         else {
+            // button to view an alert if 3D view is not available
             Button("Tap to View Alert") {
                 showingAlert = true
             }

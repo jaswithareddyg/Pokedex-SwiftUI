@@ -7,6 +7,8 @@
 
 import Foundation
 
+// This file decodes the JSON data and other API data from the internet.
+
 extension Bundle {
     func decode<T:Decodable>(file: String) -> T {
         guard let url = self.url(forResource: file, withExtension: nil) else {

@@ -24,6 +24,7 @@ struct SplashView: View {
                     Image("splashscreen")
                         .resizable()
                         .frame(width: /*@START_MENU_TOKEN@*/100.0/*@END_MENU_TOKEN@*/, height: /*@START_MENU_TOKEN@*/100.0/*@END_MENU_TOKEN@*/)
+                    // text with custom font and effect
                     Text("Pokédex")
                         .font(.custom("Pokemon Solid", size: 70))
                         .foregroundColor(.yellow)
@@ -47,6 +48,8 @@ struct SplashView: View {
                 LinearGradient(gradient: Gradient(colors: [.orange, .red]), startPoint: .top, endPoint: .bottom)
                             .ignoresSafeArea()
             )
+            
+            // shows the splash screen for 10 seconds and also prints to console
             .onAppear{
                 print("Splash Screen is loading for 10 seconds...")
                 DispatchQueue.main.asyncAfter(deadline: .now() + 10.0) {

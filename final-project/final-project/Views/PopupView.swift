@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct PopupView: View {
-    @Environment(\.dismiss) var dismiss
+    @Environment(\.dismiss) var dismiss // dismisses the popup view
     
     var body: some View {
         ScrollView {

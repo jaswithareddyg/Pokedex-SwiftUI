@@ -14,6 +14,7 @@ struct PokemonView: View {
     
     var body: some View {
         VStack {
+            // access the image directly from the internt, if not places a placeholder image which is a progressview
             AsyncImage(url: URL(string: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/\(viewModel.getPokemonIndex(pokemon: pokemon)).png")) {image in
                 if let image = image {
                     image
@@ -33,6 +34,7 @@ struct PokemonView: View {
                     .font(.system(size: 18, weight: .regular, design: .monospaced))
                     .padding(.bottom, 20)
                 
+                // button to add a pokemon to favorites
                 Button(action: {addFavorite(pokemon: pokemon)}) {
                     if viewModel.isFavorite(pokemon: pokemon) {
                         Image(systemName: "star.fill")
