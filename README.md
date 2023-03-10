@@ -19,6 +19,8 @@ Fonts <br>
 https://www.dafont.com/pokemon.font<br>
 Adding Fonts to Project <br>
 https://sarunw.com/posts/swiftui-custom-font/ <br>
+Sheet View <br>
+https://www.avanderlee.com/swiftui/presenting-sheets/ <br>
 
 # Notes
 
