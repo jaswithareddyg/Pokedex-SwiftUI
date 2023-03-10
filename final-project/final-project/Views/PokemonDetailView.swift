@@ -23,7 +23,6 @@ struct PokemonDetailView: View {
                             .font(.system(size: 24))
                             .foregroundColor(.blue)
                     }
-                    .padding()
                 }
                 
                 VStack {
